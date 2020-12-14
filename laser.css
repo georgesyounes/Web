@@ -1,0 +1,210 @@
+﻿
+
+.form-label-left {
+    width: 150px;
+}
+
+.form-line {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.form-label-right {
+    width: 150px;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+
+    background: #257329;
+
+}
+
+.form-all {
+
+    margin: 0px auto;
+    padding-top: 0px;
+    width: 800px;
+    color: #257329 !important;
+    font-family: 'Arial';
+    font-size: 18px;
+
+}
+
+
+    .header-default {
+        background-color: #257329;
+    }
+
+
+.form-all {
+    font-family: Arial, sans-serif;
+}
+
+    .form-all .qq-upload-button,
+    .form-all .form-submit-button,
+    .form-all .form-submit-reset,
+    .form-all .form-submit-print {
+        font-family: Arial, sans-serif;
+    }
+
+    .form-all .form-pagebreak-back-container,
+    .form-all .form-pagebreak-next-container {
+        font-family: Arial, sans-serif;
+    }
+
+.form-header-group {
+    font-family: Arial, sans-serif;
+}
+
+.form-label {
+    font-family: Arial, sans-serif;
+}
+
+    .form-label.form-label-auto {
+        display: inline-block;
+        float: left;
+        text-align: left;
+    }
+
+.form-line {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.form-all {
+    max-width: 800px;
+    width: 100%;
+}
+
+.form-label.form-label-left,
+.form-label.form-label-right,
+.form-label.form-label-left.form-label-auto,
+.form-label.form-label-right.form-label-auto {
+    width: 150px;
+}
+
+.form-all {
+    font-size: 18px
+}
+
+
+.supernova .form-all, .form-all {
+    background-color: #257329;
+    border: 1px solid transparent;
+}
+
+.form-all {
+    color: #4a4a4a;
+}
+
+.form-header-group .form-header {
+    color: rgb(255, 255, 255);
+}
+
+.form-header-group .form-subHeader {
+    color: #4a4a4a;
+}
+
+.form-label-top,
+.form-label-left,
+.form-label-right,
+.form-html,
+.form-checkbox-item label,
+.form-radio-item label {
+    color: #fff;
+}
+
+.form-sub-label {
+    color: #fff;
+}
+
+.supernova {
+    background-color: #257329;
+}
+
+    .supernova body {
+        background: transparent;
+    }
+
+.form-textbox,
+.form-textarea,
+.form-dropdown,
+.form-radio-other-input,
+.form-checkbox-other-input,
+.form-captcha input,
+.form-spinner input {
+    background-color: #ffffff;
+}
+
+.supernova {
+    height: 100%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: center top;
+}
+
+.supernova {
+    background-image: url(https://www.myskinlaserclinic.com/wp-content/uploads/2018/09/intro-background.jpg);
+}
+
+
+.form-all {
+    background-image: none;
+}
+
+.ie-8 .form-all:before {
+    display: none;
+}
+
+.ie-8 {
+    margin-top: auto;
+    margin-top: initial;
+}
+
+
+.form-label.form-label-auto {
+    display: inline-block;
+    float: left;
+    text-align: left;
+}
+.inputField {
+    background: transparent;
+    border-top: #257329;
+    border-right: #257329;
+    border-left: #257329;
+    border-radius: 0;
+    color:#fff;
+    transition: all .4s;
+}
+
+    .inputField:focus {
+        background: transparent;
+
+        box-shadow: none;
+        color: #fff;
+        border-color: black;
+        border-radius: 0;
+    }
+
+
+
+
+#arrow{
+  position: relative;
+  top:25%;
+  left: 8%;
+}
+
+
+#home-btn{
+  height:40px;
+  width: 40px;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  float: left;
+  color: black;
+  background-color: white;
+}
