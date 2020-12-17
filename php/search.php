@@ -31,8 +31,20 @@ else{
     // for($i=0; $i<sizeof($array);$i++)
     // {
 
-
-        echo "
+        if(sizeof($rows)==0){
+          echo "
+          <script>
+          
+            var product = document.createElement('p');
+            product.innerText='This product does not exist in our database!';
+            product.classList.add('product');
+            var element = document.getElementById('products');
+            element.appendChild(product);
+          
+          </script>
+      ";
+        }else{
+          echo "
               <script>
               var array = $array2;
               for(currentProduct in array){
@@ -41,16 +53,15 @@ else{
                 product.innerText=array[currentProduct][0];
                 quantity.innerText= 'quantity: '+array[currentProduct][1];
                 product.classList.add('product');
-                quantity.classList.add('quantity')
+                quantity.classList.add('quantity');
                 product.appendChild(quantity);
                 var element = document.getElementById('products');
                 element.appendChild(product);
-
-
               }
-
               </script>
           ";
+        }
+        
     // }
   }
 }

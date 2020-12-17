@@ -130,6 +130,8 @@ $result = $conn->query($sql);
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel = "icon" href ="img/admin.png"
+        type = "image/x-icon"> 
 	<title>Sonia Rahbani</title>
 	<link rel="stylesheet" type="text/css" href="tables.css">
 	</style>
