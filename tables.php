@@ -124,16 +124,29 @@ $result = $conn->query($sql);
 	break;	
 }
 }
+
+// if(!isset($_POST["deleteR"]))
+// {
+
+// }
+// else{
+
+
+
+// 	$sql = "DELETE FROM reservations WHERE pnumber=' ".$_POST["deleteR"]." '";
+// $result = $conn->query($sql);
+
+// }
 ?>
 
 
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel = "icon" href ="img/admin.png"
-        type = "image/x-icon"> 
 	<title>Sonia Rahbani</title>
-	<link rel="stylesheet" type="text/css" href="tables.css">
+    <link rel="stylesheet" type="text/css" href="tables.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	</style>
 </head>
 <body>
@@ -333,14 +346,38 @@ $conn->close();
 Name    :<input type="text" name="name" style="height: 30px; width: 200px;"><br><br>
 Code    : <input type="text" name="code" style="height: 30px; width: 200px;"><br><br>
 Image   :<input type="text" name="img" style="height: 30px; width: 200px;"><br><br>
-Price   :  <input type="text" name="price" style="height: 30px; width: 200px;"> <input type="submit" value="Add Item" style="background-color: #257329">
+Price   :  <input type="text" name="price" style="height: 30px; width: 200px;">
+ <input type="submit" value="Add Item" style="background-color: #257329">
+
+
+</form>
+<br>
+<!--Removing item -->
+<!-- <h1>Remove Item</h1>
+<br>
+<form>
+    Code: <input type="text" name="" id="item_code" style="height: 30px; width: 200px;">
+    <input type="submit" value="Remove Item" id="remove_item" style="background-color: #257329">
+</form> -->
+</div>
+<!-- CATE LIST    -->
+<br>
+
+
+<!-- Adding Products-->
+<h1>Modify Product</h1>
+<br>
+<div>
+<form>
+	
+Name    :<input type="text" id="product_name"  style="height: 30px; width: 200px;"><br><br>
+Quantity    : <input type="text" id="product_quant" style="height: 30px; width: 200px;">
+<input type="submit" id="addProduct" value="Modify Product" style="background-color: #257329">
 
 
 </form>
 </div>
-<!-- CATE LIST    -->
-
-          
+<!-- Adding Product / end-->
 <!-- DETAIL FORM -->
 
           
@@ -553,7 +590,41 @@ function DisplayReservation() {
 
 </script>
 
+<script>
+    $("#addProduct").click(function(){
+        var name = $("#product_name").val();
+        var quantity = $("#product_quant").val();
 
+        $.ajax({
+            url :"./php/addProduct.php",
+            type:"POST",
+ 				 data:{
+                      name: name,
+                      quantity: quantity
+ 				 },
+				 success:function(txt){
+					  alert(txt);
+					 // setTimeout(txt, 1);
+				 }
+        })
+    })
+
+//     $("#remove_item").click(function(){
+//         var code = $("#item_code").val();
+
+//         $.ajax({
+//             url :"./php/addProduct.php",
+//             type:"POST",
+//  				 data:{
+//                       code: code
+//  				 },
+// 				 success:function(txt){
+// 					  alert(txt);
+// 					 // setTimeout(txt, 1);
+// 				 }
+//         })
+//     })
+// </script>
 
 </body>
 </html>
